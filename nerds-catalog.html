@@ -29,20 +29,18 @@
 			<div class="user-block">
 				<a href="#"><img src="#" width="#" height="#" alt="Корзина">Корзина</a>
 			</div>
-			<h1>Магазин готовых шаблонов<h1>
+			<h1>Магазин готовых шаблонов</h1>
+		</div>	
 	</header>
 	<main class="content">
 		<div class="container">
-			<form action="#" method="post">
-				<label>Стоимость:
-					<input type="range" name="price" min="0" max="15 000" step="1">
-				</label>
-				<label>От
-					<input type="numer" placeholder="0">
-				</label>
-				<label>До
-					<input type="number" placeholder="15 000">
-				</label>
+			<form action="#" method="get">
+				<div class="range-input">
+					<div class="range-input-min"></div> <!-- Указатель минимума -->
+					<div class="range-input-max"></div> <!-- Указатель максимума -->
+					<div class="range-input-rail"></div> <!-- Фоновая полоска -->
+					<div class="range-input-fill"></div> <!-- заполненная полоска между min и max -->
+				</div>
 				<b>Сетка:</b>
 				<label>Адаптивная
 					<input type="radio" name="net" checked>
@@ -92,46 +90,73 @@
 				</a>
 			</div>	
 			<div class="templates">
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Седона">
-				</a>	
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Пинк">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Барбершоп">
-				</a>	
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Мишка">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Плюс">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Кваст">
-				</a>	
-			</div>	
-			<!-- Картинки, которые появляются при зависании
-			<div class="templates-hover">
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Седона">
-				</a>	
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Пинк">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Барбершоп">
-				</a>	
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Мишка">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Плюс">
-				</a>
-				<a href="#">
-					<img src="#" width="#" height="#" alt="Кваст">
-				</a>	
-			</div>-->	
+				<div class="templates-sedona">
+					<h2>Sedona</h2>
+					<span class="name">Информационный сайт для туристов
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Седона">
+					</a>	
+				</div>
+				<div class="templates-pink">
+					<h2>Pink App</h2>
+					<span class="name">Продуктовый лендинг приложения для iOS и Android
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Пинк">
+					</a>	
+				</div>
+				<div class="templates-barbershop">
+					<h2>Barbershop</h2>
+					<span class="name">Сайт салоны красоты. Для мужчин, да.
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Барбершоп">
+					</a>	
+				</div>
+				<div class="templates-mishka">
+					<h2>Mishka</h2>
+					<span class="name">Интернет-магазин вязаных игрушек
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Мишка">
+					</a>	
+				</div>
+				<div class="templates-plus">
+					<h2>A plus</h2>
+					<span class="name">Лендинг курсов повышения квалификации
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Плюс">
+					</a>	
+				</div>
+				<div class="templates-kvast">
+					<h2>Кваст</h2>
+					<span class="name">Промо-сайт производителя крафтового кваса
+					</span>
+					<span class="price">
+						<a href="#">9 900 руб.</a>
+					</span>
+					<a href="#">
+						<img src="#" width="#" height="#" alt="Кваст">
+					</a>	
+				</div>
+			</div>		
 		</div>
 		<div class="paginator">
 			<a class="active" href="#">1</a>
@@ -139,8 +164,9 @@
 			<a href="#">3</a>
 			<a href="#">Следующая</a>
 		</div>
-	</main>  
-  	<div class="contacts">
+	</main> 
+	<footer class="main-footer">	
+		<div class="contacts">
 			<h3>
 				<a href="#">Nёrds design studio</a>
 			</h3>
