@@ -1,7 +1,27 @@
+* {box-sizing: border-box;}
 body {
+	background-color: #51689D;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+	background-color: #9B9FA3;
+	width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.main-header {
+	background-color: #BED1E8;
+}
+.main-navigation {
+	background-color: #8C9DC3;
+}
 }
 h1{
 	font-size: 55px;
