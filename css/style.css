@@ -1,40 +1,149 @@
+/*Знаю, что так делать нельзя, но как черновой вариант так*/
 * {box-sizing: border-box;}
+
+/* Общие стили*/
 body {
-	background-color: #51689D;
+	min-width: 1200px;
+	min-height: 2476px;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
 }
+
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
 .container {
-	background-color: #9B9FA3;
+	background-color: #5D758B;
 	width: 1200px;
-	padding: 0 10px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
-.main-header {
-	background-color: #BED1E8;
+/* Стили для главной*/
+.index-navigation {
+	background-color: #D9E2EB;
+	min-height: 125px;
 }
-.main-navigation {
-	background-color: #8C9DC3;
+
+.index-slogan {
+	background-color: #C5D9EB;
+	min-height: 420px;
 }
+
+.slogan {
+	background-color: #D9E2EB;
+	float: left;
+	width: 420px;
 }
-h1{
+
+.slogan b {
 	font-size: 55px;
-	line-height: 55px;
-	color: #000000;	
 }
-h2 {
-	font-size: 24px; 
-	line-height: 30px;
-	color: #000000;
+
+.slogan p {
+	font-size: 24px;
 }
-h3 {
-	font-size: 18px;
-	line-height: 30px;
-	color: #000000;
+
+.caption h1 {
+	background-color: #C5D9EB;
+	min-height: 230px;
 }
+
+.banner {
+	margin-bottom: 80px;
+}
+
+.advantages-item {
+	background-color: #C5D9EB;
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+}
+
+.advantages-item:last-child {
+	margin-right: 0;
+}
+
+.advantages {
+	margin-bottom: 120px;
+}
+.content-left {
+	background-color: #D9E2EB;
+	float: left;
+	width: 660px;
+}
+
+.content-right {
+	background-color: #D9E2EB;
+	float: right;
+	width: 360px;
+}
+
+.partners {
+	background-color: #D9E2EB;
+	float: left;
+	width: 260px;
+	height: 180px;
+	margin-right: 40px;
+	text-align: center;
+	margin-bottom: 80px;
+	padding-top: 45px;
+}
+
+.partners:last-child {
+	margin-right: 0;
+}
+
+.map {
+	text-align: center;
+}
+
+.contacts {
+	background-color: #D9E2EB;
+	width: 320px;
+	height: 310px;
+}
+
+.footer-social {
+	background-color: #D9E2EB;
+	height: 217px;
+}
+
+/* Стили для католога*/
+
+.choice {
+	background-color: #D9E2EB;
+	width: 260px;
+	height: 1900px;
+	float: left;
+	margin-right: 120px;
+}
+
+.filtr {
+	background-color: #D9E2EB;
+	line-height: 133px;
+}
+
+.templates-item {
+	background-color: #C5D9EB;
+	float: left;
+	width: 360px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 35px;
+}
+
+.templates-item:nth-child(even) {
+	margin-right: 0;
+}
+
+.paginator {
+	clear: both;
+}
+
