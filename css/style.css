@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
+	font-family: "Roboto", "Arial", regular;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -26,9 +27,88 @@ body {
 	margin: 0 auto;
 }
 /* Стили для главной*/
+
+.logo {
+	background-color: #f2f2f2;
+	float: left;
+	width: 160px;
+	margin-right: 180px;
+	margin-top: 40px;
+}
+
 .index-navigation {
-	background-color: #D9E2EB;
+	background-color: #C5D9EB;
 	min-height: 125px;
+	margin-bottom: 80px;
+}
+
+.main-navigation {
+	float: left;
+	width: 550px;
+	min-height: 125px;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.main-navigation a {
+	display: block;
+	padding-top: 70px;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	color: #fb565a;
+}
+
+.user-block {
+	float: right;
+	max-width: 160px;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.basket {
+	position: relative;
+	display: inline-block;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	font-size: 16px;
+	line-height: 30px;
+	vertical-align: top;
+	color: #000000;
+	text-decoration: none;	
+}
+
+.basket::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: 5px;
+	bottom: 27px;
+	background: url("../img/icon-basket.png") no-repeat;
+}
+
+.basket:hover {
+	color: #fb565a;
 }
 
 .index-slogan {
@@ -36,47 +116,124 @@ body {
 	min-height: 420px;
 }
 
+.banner {
+	margin-bottom: 80px;
+	padding-left: 425px;
+}
+
 .slogan {
-	background-color: #D9E2EB;
-	float: left;
-	width: 420px;
+	width: 425px;
+	height: 340px;
+	position: absolute;
 }
 
 .slogan b {
 	font-size: 55px;
+	line-height: 55px;
 }
 
 .slogan p {
-	font-size: 24px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .caption h1 {
 	background-color: #C5D9EB;
-	min-height: 230px;
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
 }
 
-.banner {
-	margin-bottom: 80px;
+.slogan a {
+	position: absolute;
+	bottom: 75px;
+	background-color: #fb565a;
+	width: 240px;
+	height: 50px;
+	color: #ffffff;
+	padding: 15px 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.index-slogan {
+	position: relative;
+}
+
+.advantages-item h2 {
+	font-size: 24px;
+	line-height: 30px;
 }
 
 .advantages-item {
-	background-color: #C5D9EB;
 	float: left;
 	width: 300px;
 	margin-right: 100px;
-}
+	min-height: 350px;
+}	
 
 .advantages-item:last-child {
 	margin-right: 0;
 }
 
+.advantages p {
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 37px;
+}
+
 .advantages {
 	margin-bottom: 120px;
 }
+
+.btn-site {
+	background-color: #fb565a;
+	padding: 15px 40px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.btn-app {
+	background-color: #00ca74;
+	padding: 15px 40px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.btn-presentation {
+	background-color: #efc84a;
+	padding: 15px 40px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+}	
+
 .content-left {
 	background-color: #D9E2EB;
 	float: left;
 	width: 660px;
+}
+
+.content-left span {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.content-left p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.content-left b {
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
 }
 
 .content-right {
@@ -99,7 +256,7 @@ body {
 .partners:last-child {
 	margin-right: 0;
 }
-
+/*Общие стили для футера и карты*/
 .map {
 	text-align: center;
 }
@@ -108,30 +265,55 @@ body {
 	background-color: #D9E2EB;
 	width: 320px;
 	height: 310px;
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+	margin-top: -380px;
 }
 
 .footer-social {
 	background-color: #D9E2EB;
 	height: 217px;
+	float: left;
+	width: 260px;
+	padding-top: 70px;
+	margin-right: 140px;
+}
+
+.discount {
+	padding-top: 70px;
+}
+
+.discount b{
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.discount p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
 }
 
 /* Стили для католога*/
 
-.choice {
+.side-left {
 	background-color: #D9E2EB;
 	width: 260px;
-	height: 1900px;
+	min-height: 1900px;
 	float: left;
 	margin-right: 120px;
 }
 
 .filtr {
-	background-color: #D9E2EB;
-	line-height: 133px;
+	width: 760px;
+	margin-left: 400px;
+	height: 132px;
+	text-align: center;
+	padding-top: 45px;
 }
 
 .templates-item {
-	background-color: #C5D9EB;
 	float: left;
 	width: 360px;
 	margin-right: 20px;
@@ -144,6 +326,82 @@ body {
 }
 
 .paginator {
-	clear: both;
+	margin-left: 400px;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
+
+.templates {
+	margin-bottom: 60px;
+}
+
+/*Стили для формы*/
+
+.range-input {
+	width: 260px;
+}
+
+.range-rail {
+	position: relative;
+	height: 41px;
+	padding-top: 39px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+}
+.range-rail .scope {
+	height: 2px;
+	background-color: #d7dcde 
+}
+.range-rail .band {
+	width: 145px;
+	height: 2px ;
+	background-color: #00ca74;
+}
+.range-rail .switch {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	cursor: pointer;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-rail .range-min {
+	left: 18px;
+} 
+.range-rail .range-max {
+	left: 161px;
+} 
+.range-price {
+	font-size: 0;
+}
+.range-price label {
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+}
+.max-price {
+	text-align: right;
+}
+.range-price input {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 16px;
+	width: 80px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 10px;
+	text-align: center;
+	color: #283136;
+	border: none;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+}
+
+
 

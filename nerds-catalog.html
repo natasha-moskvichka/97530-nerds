@@ -6,49 +6,65 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
-		<div class="container clearfix">
-			<div class="index-navigation">
-				<a href="#">
-					<img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
-				</a>	
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li class="active">
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>	
-				<div class="user-block">
-					<a href="#">Корзина
-						<img src="#" width="#" height="#" alt="Корзина">
+	<header>
+		<div class="main-header">
+			<div class="container clearfix">
+				<div class="index-navigation">
+					<div class="logo">
+					<a>
+						<img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
 					</a>
+					</div>	
+					<nav class="main-navigation">
+						<ul>
+							<li>
+								<a href="#">Студия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li class="active">
+								<a href="#">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>	
+					<div class="user-block">
+						<a class="basket" href="#">Корзина</a>
+					</div>
 				</div>
+				<div class="caption">	
+					<h1>Магазин готовых шаблонов</h1>
+				</div>	
 			</div>
-			<div class="caption">	
-				<h1>Магазин готовых шаблонов</h1>
-			</div>	
 		</div>	
 	</header>
 	<main class="content">
 		<div class="container clearfix">
-			<div class="choice">
+			<div class="side-left">
 				<form action="#" method="get">
 					<b>Стоимость:</b>
 					<div class="range-input">
-						<div class="range-input-min"></div> <!-- Указатель минимума -->
-						<div class="range-input-max"></div> <!-- Указатель максимума -->
-						<div class="range-input-rail"></div> <!-- Фоновая полоска -->
-						<div class="range-input-fill"></div> <!-- заполненная полоска между min и max -->
+						<div class="range-rail">
+							<div class="scope">
+								<div class="band">
+								</div>
+								<div class="switch range-min">
+								</div>
+								<div class="switch range-max">
+								</div>
+							</div> 
+						</div>	
+						<div class="range-price">
+						<label class="min-price"> от 
+							<input name="min-price" type="text" value="0">
+						</label>
+						<label class="max-price"> до 
+							<input name="max-price" type="text" value="15000">
+						</label>				
+						</div> 
 					</div>
 					<b>Сетка:</b>
 					<label>Адаптивная
@@ -79,7 +95,7 @@
 					<input type="submit" value="Показать">
 				</form>
 			</div>
-			<div class="gallery">
+			<div class="side-right">
 				<div class="filtr">
 					<b>Сортировать:</b>
 					<span>
@@ -98,7 +114,7 @@
 						<img src="#" width="#" alt="По возрастанию">
 					</a>
 				</div>
-				<div class="templates">
+				<div class="templates clearfix">
 					<div class="templates-item">
 						<!--<a href="#">
 							<h2>Sedona</h2>
@@ -160,18 +176,20 @@
 						<img src="img/templates-kvast.jpg" width="360" height="616" alt="Кваст">
 					</div>
 				</div>		
-			</div>		
-			<div class="paginator">
+				<div class="paginator">
 				<a class="active" href="#">1</a>
 				<a href="#">2</a>
 				<a href="#">3</a>
 				<a href="#">Следующая</a>
+				</div>
 			</div>
 		</div>	
 	</main> 
 	<footer class="main-footer">
-		<div class="container clearfix">	
-			<div class="contacts">
+		<div class="map">
+			<img src="img/map.png" width="1440" height="416" alt="Карта">
+		</div>
+		<div class="contacts">
 				<h3>
 					<a href="#">Nёrds design studio</a>
 				</h3>
@@ -180,34 +198,33 @@
 				тел. +7 (812) 275-75-75</p>
 				<button type="button">Напишите нам</button>
 			</div>
-		</div>	
-		<div class="map">
-			<img src="img/map.png" width="1440" height="416" alt="Карта">
-		</div>
-			<!--Окно формы появляется при нажатии кнопки напишите нам
-			<div class="feedback">
-				<form action="#" method="post">
-					<label>Ваше имя:
-						<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-					</label>
-					<label>Ваш e-mail:
-						<input type="text" name="email" placeholder="Для отправки ответа">
-					</label>
-					<label>Текст письма:
-						<textarea name="message">
-						</textarea>
-					</label>
-					<input type="submit" class="btn" value="Отправить">
-				</form>
-			</div>-->
-		<div class="container clearfix">	
-			<section class="footer-social">
+		<!--Окно формы появляется при нажатии кнопки напишите нам
+		<div class="feedback">
+			<form action="#" method="post">
+				<label>Ваше имя:
+					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label>Ваш e-mail:
+					<input type="text" name="email" placeholder="Для отправки ответа">
+				</label>
+				<label>Текст письма:
+					<textarea name="message">
+					</textarea>
+				</label>
+				<input type="submit" class="btn" value="Отправить">
+			</form>
+		</div>-->
+		<div class="container clearfix">
+			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</div>
+			<div class="discount">		
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</section>
+			</div>	
+			</div>
 		</div>
 	</footer>
   </body>

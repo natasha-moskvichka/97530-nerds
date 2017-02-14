@@ -9,10 +9,12 @@
 	<header>
 		<div class="main-header">
 			<div class="container clearfix">
-				<div class="index-navigation">
+				<div class="index-navigation">	
+					<div class="logo">
 					<a>
 						<img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
 					</a>
+					</div>
 					<nav class="main-navigation">
 						<ul>
 							<li>
@@ -30,29 +32,34 @@
 						</ul>
 					</nav>	
 					<div class="user-block">
-						<a href="#">Корзина
-							<img src="#" width="#" height="#" alt="Корзина">
-						</a>
+						<a class="basket" href="#">Корзина</a>
 					</div>
 				</div>
 				<div class="index-slogan">
 					<div class="slogan">
 						<b>Долго, дорого, скрупулезно.</b>
-						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
 						<a class="more" href="#">Узнать больше</a>
 					</div>
 					<div class="banner">	
 						<a href="#">
-							<img src="img/slider-1.png" width="#" height="#" alt="Баннер">
-						</a>
-						<!--<a href="#">
-							<img src="#" width="#" height="#" alt="Переключатель">
-						</a>-->
+							<img src="img/slider-1.png" width="698" height="413" alt="Баннер">
+						</a>						
+						<div class="slider">
+							<div class="slider-controls">
+								<span class="active">
+								</span>
+								<span>
+								</span>
+								<span>
+								</span>
+							</div>
+						</div>	
 					</div>
-				</div>	
-			</div>	
-		</div>
-				<!-- Картинки меняются при нажатии кнопки
+				</div>
+			</div>
+		</div>	
+		<!-- Картинки меняются при нажатии кнопки
 				<div class="slogan">
 					<b>Любим математику, как никто другой.</b>
 					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
@@ -73,37 +80,38 @@
 						<img src="#" width="#" height="#" alt="Баннер">
 					</a>
 				</div>-->
+				
 	</header>
     <main class="container">
 		<div class="advantages clearfix">
 			<article class="advantages-item">
 				<a href="#">
-					<img src="img/advantage-site.png" width="#" height="#" alt="Веб-сайты">
+					<img src="img/advantage-site.png" width="300" height="146" alt="Веб-сайты">
 				</a>
 				<h2>Веб-сайты</h2>
 				<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-				<a class="btn" href="#">Заказaть</a>
+				<a class="btn-site" href="#">Заказaть</a>
 			</article>
 			<article class="advantages-item">
 				<a href="#">
-					<img src="img/advantage-app.png" width="#" height="#" alt="Приложения">
+					<img src="img/advantage-app.png" width="300" height="146" alt="Приложения">
 				</a>
 				<h2>Приложения</h2>
 				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a class="btn" href="#">Заказaть</a>
+				<a class="btn-app" href="#">Заказaть</a>
 			</article>
 			<article class="advantages-item">
 				<a href="#">
-					<img src="img/advantage-presentation.png" width="#" height="#" alt="Презентации">
+					<img src="img/advantage-presentation.png" width="300" height="146" alt="Презентации">
 				</a>
 				<h2>Презентации</h2>
 				<p>Вы даже не подозреваете насколько вы изумительны!</p>
-				<a class="btn" href="#">Заказaть</a>
+				<a class="btn-presentation" href="#">Заказaть</a>
 			</article>
 		</div>	
 			<div class="content clearfix">
 				<div class="content-left">
-					<p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+					<span>Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 					превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<b>Выполняем заказы на разработку:</b>
@@ -150,8 +158,10 @@
 				</a>
 			</div>
 		</div>
-		<div class="container clearfix">
-			<div class="contacts">
+		<div class="map">
+			<img src="img/map.png" width="1440" height="416" alt="Карта">
+		</div>
+		<div class="contacts">
 				<h3>
 					<a href="#">Nёrds design studio</a>
 				</h3>
@@ -160,10 +170,6 @@
 				тел. +7 (812) 275-75-75</p>
 				<button type="button">Напишите нам</button>
 			</div>
-		</div>	
-		<div class="map">
-			<img src="img/map.png" width="1440" height="416" alt="Карта">
-		</div>
 		<!--Окно формы появляется при нажатии кнопки напишите нам
 		<div class="feedback">
 			<form action="#" method="post">
@@ -180,14 +186,17 @@
 				<input type="submit" class="btn" value="Отправить">
 			</form>
 		</div>-->
-		<div class="container">
-			<section class="footer-social">
+		<div class="container clearfix">
+			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</div>
+			<div class="discount">		
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</section>
+			</div>	
+			</div>
 		</div>
 	</footer>
   </body>
