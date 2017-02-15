@@ -272,12 +272,38 @@ body {
 }
 
 .footer-social {
-	background-color: #D9E2EB;
+	background-color: #ffffff;
 	height: 217px;
 	float: left;
 	width: 260px;
 	padding-top: 70px;
 	margin-right: 140px;
+}
+
+.social-btn {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	background: url("img/social.png") no-repeat center;
+}
+
+.social-btn-fb {
+    width: 79px;
+    height: 79px;
+    background-position: -160px -10px;
+}
+
+.social-btn-inst {
+    width: 79px;
+    height: 79px;
+    background-position: -259px -10px;
+}
+
+.social-btn-vk {
+    width: 79px;
+    height: 79px;
+    background-position: -358px -10px;
 }
 
 .discount {
@@ -302,23 +328,23 @@ body {
 	width: 260px;
 	min-height: 1900px;
 	float: left;
-	margin-right: 120px;
+}
+
+.side-right {
+	float: right;
+	width: 760px;
+	margin-left: 0;
 }
 
 .filtr {
 	width: 760px;
-	margin-left: 400px;
-	height: 132px;
-	text-align: center;
-	padding-top: 45px;
 }
 
 .templates-item {
 	float: left;
 	width: 360px;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-bottom: 35px;
+	margin-right: 40px;
+	margin-bottom: 40px;
 }
 
 .templates-item:nth-child(even) {
@@ -327,7 +353,6 @@ body {
 
 .paginator {
 	margin-left: 400px;
-	padding-top: 30px;
 	padding-bottom: 60px;
 }
 
