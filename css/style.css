@@ -7,8 +7,7 @@ body {
 	min-height: 2476px;
 	margin: 0;
 	padding: 0;
-	background-color: #ffffff;
-	font-family: "Roboto", "Arial", regular;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -21,28 +20,31 @@ body {
 }
 
 .container {
-	background-color: #5D758B;
+	
 	width: 1200px;
+	background: #ffffff;
 	padding: 0 20px;
 	margin: 0 auto;
 }
 /* Стили для главной*/
 
 .logo {
-	background-color: #f2f2f2;
+	background-color: #eeeeee;
 	float: left;
 	width: 160px;
 	margin-right: 180px;
-	margin-top: 40px;
 }
 
 .index-navigation {
-	background-color: #C5D9EB;
+	background-color: #eeeeee;
+	color: #000000;
 	min-height: 125px;
-	margin-bottom: 80px;
+	margin: 0;
 }
 
 .main-navigation {
+	background-color: #eeeeee;
+	color: #000000;
 	float: left;
 	width: 550px;
 	min-height: 125px;
@@ -65,7 +67,7 @@ body {
 
 .main-navigation a {
 	display: block;
-	padding-top: 70px;
+	padding-top: 32px;
 	padding-right: 20px;
 	padding-left: 20px;
 	color: #000000;
@@ -87,7 +89,7 @@ body {
 .basket {
 	position: relative;
 	display: inline-block;
-	padding-top: 70px;
+	padding-top: 32px;
 	padding-bottom: 20px;
 	padding-left: 50px;
 	font-size: 16px;
@@ -112,12 +114,11 @@ body {
 }
 
 .index-slogan {
-	background-color: #C5D9EB;
+	background-color: #eeeeee;
 	min-height: 420px;
 }
 
 .banner {
-	margin-bottom: 80px;
 	padding-left: 425px;
 }
 
@@ -138,10 +139,14 @@ body {
 }
 
 .caption h1 {
-	background-color: #C5D9EB;
+	background-color: #eeeeee;
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	padding-bottom: 110px;
+	
 }
 
 .slogan a {
@@ -154,7 +159,7 @@ body {
 	padding: 15px 50px;
 	text-decoration: none;
 	text-transform: uppercase;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .index-slogan {
@@ -181,10 +186,12 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	padding-bottom: 37px;
+	padding-right: 40px;
 }
 
 .advantages {
 	margin-bottom: 120px;
+	padding-top: 80px;
 }
 
 .btn-site {
@@ -215,42 +222,97 @@ body {
 }	
 
 .content-left {
-	background-color: #D9E2EB;
+	background-color: #ffffff;
 	float: left;
 	width: 660px;
+	
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	
 }
 
 .content-left span {
 	font-size: 45px;
 	line-height: 45px;
-}
-
-.content-left p {
-	font-size: 16px;
-	line-height: 24px;
+	color: #000000;
+	font-weight: bold;
 }
 
 .content-left b {
-	font-size: 16px;
-	line-height: 24px;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .content-right {
-	background-color: #D9E2EB;
 	float: right;
 	width: 360px;
+	margin-bottom: 35px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+
+.content-right b {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 35px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.level {
+	float: left;
+	width: 110px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #283136;
+}
+
+.level .statistic {
+	padding-bottom: 22px;
+	font-size: 45px;
+	color: #000000;
+}
+.term .statistic{
+	padding-bottom: 22px;
+	font-size: 45px;
+	color: #000000;
+}
+
+.prepay .statistic {
+	padding-bottom: 22px;
+	font-size: 45px;
+	color: #000000;
+}
+.level .statistic .sup-index {
+	color: #000000;
+	font-size: 22px;
+	line-height: 10px;
+}
+
+.term .statistic .sup-index {
+	color: #000000;
+	font-size: 22px;
+	line-height: 10px;
+}
+
+.prepay .statistic .sup-index {
+	color: #000000;
+	font-size: 22px;
+	line-height: 10px;
 }
 
 .partners {
-	background-color: #D9E2EB;
+	background-color: #ffffff;
 	float: left;
-	width: 260px;
+	width: 280px;
 	height: 180px;
-	margin-right: 40px;
-	text-align: center;
 	margin-bottom: 80px;
-	padding-top: 45px;
+	margin-top: 45px;
+	text-align: center;
+	
 }
 
 .partners:last-child {
@@ -262,52 +324,76 @@ body {
 }
 
 .contacts {
-	background-color: #D9E2EB;
+	background-color: #ffffff;
 	width: 320px;
 	height: 310px;
 	position: absolute;
 	left: 50%;
 	margin-left: -600px;
 	margin-top: -380px;
+	padding-left: 50px;
+	padding-top: 45px;
+}
+
+.contacts h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.contacts a {
+	color: #000000;
+	text-decoration: none;
+	
+}
+
+.btn-contacts {
+	background: #fb565a;
+	color: #ffffff;
+	padding: 17px 45px;
+	text-transform: uppercase;
+}
+
+.contacts b {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
 }
 
 .footer-social {
-	background-color: #ffffff;
 	height: 217px;
 	float: left;
 	width: 260px;
-	padding-top: 70px;
-	margin-right: 140px;
+	text-align: center;
 }
 
 .social-btn {
 	display: inline-block;
+	width: 79px;
+	height: 79px;
 	font-size: 0;
-	vertical-align: top;
-	text-decoration: none;
-	background: url("img/social.png") no-repeat center;
-}
-
-.social-btn-fb {
-    width: 79px;
-    height: 79px;
-    background-position: -160px -10px;
-}
-
-.social-btn-inst {
-    width: 79px;
-    height: 79px;
-    background-position: -259px -10px;
+	margin-top: 69px;
+	background: url("../img/social.png") no-repeat center;
 }
 
 .social-btn-vk {
-    width: 79px;
-    height: 79px;
-    background-position: -358px -10px;
+	background-position: -198px 0;
+}
+
+.social-btn-fb {
+	background-position: -1px 0;
+}
+
+.social-btn-inst {
+	background-position: -100px 0;
 }
 
 .discount {
+	display: inline-block;
+	min-width: 360px;
 	padding-top: 70px;
+	padding-left: 120px;
 }
 
 .discount b{
@@ -321,12 +407,67 @@ body {
 	color: #444444;
 }
 
+/*Стили для обратной связи*/
+
+.feedback {
+	width: 960px;
+	height: 590px;
+}
+
+.feedback span {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.feedback-popup label {
+	width: 115px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.feedback-popup input {
+	width: 360px;
+	height: 48px;
+	vertical-align: center;
+}
+
+.feedback-popup label textarea {
+	width: 760px;
+	height: 116px;
+} 
+
+.feedback-btn {
+	background: #fb565a;
+	color: #ffffff;
+	padding: 15px 80px;
+	text-transform: uppercase;
+}
+
 /* Стили для католога*/
 
+.filtr-btn {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	font-size: 0;
+	margin-right: 20px;
+	background: url("../img/sprite-sort.png") no-repeat center;
+}
+.filtr-btn:last-child {
+	margin-right: 0;
+}
+.filtr-btn-down {
+	background-position: 0 0;
+}
+
+.filtr-btn-up {
+	background-position: -29px 0;
+}
+
 .side-left {
-	background-color: #D9E2EB;
 	width: 260px;
-	min-height: 1900px;
+	min-height: 785px;
 	float: left;
 }
 
@@ -336,8 +477,49 @@ body {
 	margin-left: 0;
 }
 
+.side-left b {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	padding-bottom: 49px;
+	padding-top: 55px;
+}
+
 .filtr {
 	width: 760px;
+	vertical-align: middle;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+
+.filtr b {
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-right: 255px; 	
+}
+
+.filtr span {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-right: 25px;
+}
+
+
+.filtr span a {
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+.filtr .active {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	
 }
 
 .templates-item {
@@ -352,7 +534,7 @@ body {
 }
 
 .paginator {
-	margin-left: 400px;
+	margin: 0;
 	padding-bottom: 60px;
 }
 
@@ -378,7 +560,7 @@ body {
 }
 .range-rail .scope {
 	height: 2px;
-	background-color: #d7dcde 
+	background-color: #d7dcde; 
 }
 .range-rail .band {
 	width: 145px;
@@ -415,7 +597,7 @@ body {
 	text-align: right;
 }
 .range-price input {
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	width: 80px;
 	padding-top: 8px;
@@ -427,6 +609,29 @@ body {
 	border-radius: 5px;
 	background-color: #f1f1f1;
 }
-
-
-
+/*Слайдер на главной странице
+.slider-controls{
+    position:absolute;
+    bottom:250px;
+    left:50%;
+    width:90px;
+    height:20px;
+    margin-left:-50px;
+	text-align:center;
+    z-index:1000;
+}
+.slider-controls i{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin:0 3px;
+    background:white;
+    border:4px solid #ffffff;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+.slider-controls .active{
+    background:#c1c1c1;
+}
+*/

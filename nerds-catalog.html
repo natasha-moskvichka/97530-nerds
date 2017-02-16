@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
 	<header>
@@ -11,7 +12,7 @@
 			<div class="container clearfix">
 				<div class="index-navigation">
 					<div class="logo">
-					<a>
+					<a href="#">
 						<img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
 					</a>
 					</div>	
@@ -107,12 +108,8 @@
 					<span>
 						<a href="#">По названию</a>
 					</span>
-					<a>
-						<img src="#" width="#" alt="По убыванию">
-					</a>
-					<a href="#">
-						<img src="#" width="#" alt="По возрастанию">
-					</a>
+					<a class="filtr-btn filtr-btn-down" href="#">По убыванию</a>
+					<a class="filtr-btn filtr-btn-up" href="#">По возрастанию</a>
 				</div>
 				<div class="templates clearfix">
 					<div class="templates-item">
@@ -194,10 +191,10 @@
 					<a href="#">Nёrds design studio</a>
 				</h3>
 				<p>191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная , д. 19/8<br>
-				тел. +7 (812) 275-75-75</p>
-				<button type="button">Напишите нам</button>
-			</div>
+				ул. Б. Конюшенная , д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<button class="btn-contacts" type="button">Напишите нам</button>
+		</div>
 		<!--Окно формы появляется при нажатии кнопки напишите нам
 		<div class="feedback">
 			<form action="#" method="post">
@@ -224,7 +221,6 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>	
-			</div>
 		</div>
 	</footer>
   </body>

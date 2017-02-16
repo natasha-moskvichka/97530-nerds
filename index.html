@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
 	<header>
@@ -45,20 +46,19 @@
 						<a href="#">
 							<img src="img/slider-1.png" width="698" height="413" alt="Баннер">
 						</a>						
-						<div class="slider">
-							<div class="slider-controls">
-								<span class="active">
-								</span>
-								<span>
-								</span>
-								<span>
-								</span>
-							</div>
-						</div>	
 					</div>
 				</div>
 			</div>
 		</div>	
+		
+		<div class="slogan-slider">
+			<div class="slider-controls">
+				<i class="active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+		
 		<!-- Картинки меняются при нажатии кнопки
 				<div class="slogan">
 					<b>Любим математику, как никто другой.</b>
@@ -121,23 +121,18 @@
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>	
-				<div class="content-right">
+				<div class="content-right clearfix">
 					<img src="img/studio.jpg" width="360" height="207" alt="Нёрдс">
 					<b>С 2004 года любим точность во всем:</b>
-					<dl>
-						<dt>146%</dt>
-						<dd>Уровень самоотдачи</dd>
-						<dt>100%</dt>
-						<dd>Соблюдение сроков</dd>
-						<dt>50%</dt>
-						<dd>Минимальная предоплата</dd>
-					</dl>
+					<span class="level"><b class="statistic">146<sup class="sup-index">%</sup></b>Уровень самоотдачи</span>
+					<span class="level"><b class="statistic">100<sup class="sup-index">%</sup></b> Соблюдение сроков</span>
+					<span class="level"><b class="statistic">50<sup class="sup-index">%</sup></b> Минимальная предоплата</span>
 				</div>
 			</div>	
 	</main>
 	<footer class="main-footer">
 		<div class="container clearfix">
-			<div class="partners">
+			<div class="partners clearfix">
 				<a href="#">
 					<img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
 				</a>
@@ -166,13 +161,14 @@
 					<a href="#">Nёrds design studio</a>
 				</h3>
 				<p>191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная , д. 19/8<br>
-				тел. +7 (812) 275-75-75</p>
-				<button type="button">Напишите нам</button>
-			</div>
+				ул. Б. Конюшенная , д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<button class="btn-contacts" type="button">Напишите нам</button>
+		</div>
 		<!--Окно формы появляется при нажатии кнопки напишите нам
 		<div class="feedback">
-			<form action="#" method="post">
+			<span>Напишите нам</span>
+			<form class="feedback-popup" action="#" method="post">
 				<label>Ваше имя:
 					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
 				</label>
@@ -180,10 +176,9 @@
 					<input type="text" name="email" placeholder="Для отправки ответа">
 				</label>
 				<label>Текст письма:
-					<textarea name="message">
-					</textarea>
+					<textarea name="message">В свободной форме</textarea>
 				</label>
-				<input type="submit" class="btn" value="Отправить">
+				<input type="submit" class="feedback-btn" value="Отправить">
 			</form>
 		</div>-->
 		<div class="container clearfix">
@@ -196,7 +191,6 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>	
-			</div>
 		</div>
 	</footer>
   </body>
