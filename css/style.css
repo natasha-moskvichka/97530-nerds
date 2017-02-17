@@ -190,9 +190,19 @@ body {
 }
 
 .advantages {
-	margin-bottom: 120px;
+	padding-bottom: 75px;
 	padding-top: 80px;
+	position: relative;
 }
+
+/*.advantages::after {
+	content: "";
+	background: #eeeeee;
+	width: 1160px;
+	height: 2px;
+	position: absolute;
+	top: 500px;
+}*/
 
 .btn-site {
 	background-color: #fb565a;
@@ -221,15 +231,19 @@ body {
 	border-radius: 2px;
 }	
 
+.content {
+	background: url("../img/band.png") no-repeat;
+	padding-top: 40px;
+
+}
 .content-left {
 	background-color: #ffffff;
 	float: left;
 	width: 660px;
-	
+	position: relative;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
-	
 }
 
 .content-left span {
@@ -242,6 +256,27 @@ body {
 .content-left b {
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.content-left ul {
+	list-style: none;
+	padding-left: 37px;
+}
+
+.content-left li {
+	padding-bottom: 30px;
+}
+
+.content-left li:last-child {
+	padding-bottom: 0;
+}
+
+.content-left li::before {
+	content: " ";
+	width: 25px;
+	position: absolute;
+	border: 1px solid #fb565a;
+	left: 1px;
 }
 
 .content-right {
@@ -310,14 +345,30 @@ body {
 	width: 280px;
 	height: 180px;
 	margin-bottom: 80px;
-	margin-top: 45px;
+	padding-top: 45px;
 	text-align: center;
-	
+	background: url("../img/band.png") no-repeat;
 }
 
 .partners:last-child {
 	margin-right: 0;
 }
+
+.partners a {
+	display: block;
+}
+
+.partners::before {
+	content: "";
+	height: 52px;
+	border: 1px solid #eeeeee;
+}
+.partners::after {
+	content: "";
+	width: 1160px;
+	border: 1px solid #eeeeee;
+}
+
 /*Общие стили для футера и карты*/
 .map {
 	text-align: center;
@@ -345,9 +396,13 @@ body {
 .contacts a {
 	color: #000000;
 	text-decoration: none;
-	
 }
 
+/*.map-mark {
+	position: absolute;
+	right: 950px;
+}
+*/
 .btn-contacts {
 	background: #fb565a;
 	color: #ffffff;
@@ -410,8 +465,57 @@ body {
 /*Стили для обратной связи*/
 
 .feedback {
+	position: absolute;
+	bottom: 180px;
+	right: 150px;;
+	bottom: -1500px;
 	width: 960px;
-	height: 590px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 83px;
+	padding-top: 73px;
+	background-color: #ffffff;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.feedback-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: 0;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.feedback-close::before,
+.feedback-close::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 9px;
+	width: 3px;
+	height: 20px;
+	background-color: #fecccd;
+	border-radius: 1px;
+}
+
+.feedback-close::before {
+	transform: rotate(45deg);
+}
+
+.feedback-close::after {
+	transform: rotate(-45deg);
+}
+
+.feedback-popup input [type="text"] {
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #444444;
+	border: 2px solid #444444;
 }
 
 .feedback span {
@@ -427,9 +531,10 @@ body {
 }
 
 .feedback-popup input {
+	display: inline-block;
 	width: 360px;
-	height: 48px;
-	vertical-align: center;
+	height: 45px;
+	margin: 0;
 }
 
 .feedback-popup label textarea {
@@ -509,7 +614,6 @@ body {
 	margin-right: 25px;
 }
 
-
 .filtr span a {
 	text-decoration: none;
 	color: #eeeeee;
@@ -519,7 +623,11 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
-	
+}
+
+.side-left label {
+	display: block;
+	padding-bottom: 22px;
 }
 
 .templates-item {
